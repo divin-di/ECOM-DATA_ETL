@@ -1,0 +1,28 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ecom-user-data",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"P_Filename": "@trigger().outputs.body.fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/landing-zone-1/blobs/user-raw-1/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/3b066709-3b1e-4248-8595-f1de929cda47/resourceGroups/ecomprojectdivin/providers/Microsoft.Storage/storageAccounts/ecomprojdivin",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,152 @@
+{
+	"name": "buyercsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "landing-zone-1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "buyers",
+				"type": "String"
+			},
+			{
+				"name": "topbuyers",
+				"type": "String"
+			},
+			{
+				"name": "topbuyerratio",
+				"type": "String"
+			},
+			{
+				"name": "femalebuyers",
+				"type": "String"
+			},
+			{
+				"name": "malebuyers",
+				"type": "String"
+			},
+			{
+				"name": "topfemalebuyers",
+				"type": "String"
+			},
+			{
+				"name": "topmalebuyers",
+				"type": "String"
+			},
+			{
+				"name": "femalebuyersratio",
+				"type": "String"
+			},
+			{
+				"name": "topfemalebuyersratio",
+				"type": "String"
+			},
+			{
+				"name": "boughtperwishlistratio",
+				"type": "String"
+			},
+			{
+				"name": "boughtperlikeratio",
+				"type": "String"
+			},
+			{
+				"name": "topboughtperwishlistratio",
+				"type": "String"
+			},
+			{
+				"name": "topboughtperlikeratio",
+				"type": "String"
+			},
+			{
+				"name": "totalproductsbought",
+				"type": "String"
+			},
+			{
+				"name": "totalproductswished",
+				"type": "String"
+			},
+			{
+				"name": "totalproductsliked",
+				"type": "String"
+			},
+			{
+				"name": "toptotalproductsbought",
+				"type": "String"
+			},
+			{
+				"name": "toptotalproductswished",
+				"type": "String"
+			},
+			{
+				"name": "toptotalproductsliked",
+				"type": "String"
+			},
+			{
+				"name": "meanproductsbought",
+				"type": "String"
+			},
+			{
+				"name": "meanproductswished",
+				"type": "String"
+			},
+			{
+				"name": "meanproductsliked",
+				"type": "String"
+			},
+			{
+				"name": "topmeanproductsbought",
+				"type": "String"
+			},
+			{
+				"name": "topmeanproductswished",
+				"type": "String"
+			},
+			{
+				"name": "topmeanproductsliked",
+				"type": "String"
+			},
+			{
+				"name": "meanofflinedays",
+				"type": "String"
+			},
+			{
+				"name": "topmeanofflinedays",
+				"type": "String"
+			},
+			{
+				"name": "meanfollowers",
+				"type": "String"
+			},
+			{
+				"name": "meanfollowing",
+				"type": "String"
+			},
+			{
+				"name": "topmeanfollowers",
+				"type": "String"
+			},
+			{
+				"name": "topmeanfollowing",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

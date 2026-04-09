@@ -1,0 +1,9 @@
+{
+	"name": "ecom-orc",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c2f81fcc-06fd-40e1-905b-eccb316ff100",
+		"tenantId": "b4f39397-b30e-4333-8755-aa33df9b1f61"
+	}
+}
