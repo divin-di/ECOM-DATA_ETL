@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ecom-orc"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"source_adls_raw_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://ecomprojdivin.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0324-032314-kjjdu7xe"
+		},
+		"source_adls_raw_properties_typeProperties_url": {
+			"value": "https://ecomprojdivin.dfs.core.windows.net/"
+		},
+		"trigger1_properties_ecom-user-data_parameters_P_Filename": {
+			"value": "@trigger().outputs.body.fileName"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/3b066709-3b1e-4248-8595-f1de929cda47/resourceGroups/ecomprojectdivin/providers/Microsoft.Storage/storageAccounts/ecomprojdivin"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
